@@ -1,0 +1,194 @@
+[
+  {
+    "identifier": "product.item.view.global",
+    "service": "product",
+    "section": "item",
+    "description": "Consultar artículos",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.item.create.global",
+    "service": "product",
+    "section": "item",
+    "description": "Crear artículos",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.item.update.global",
+    "service": "product",
+    "section": "item",
+    "description": "Actualizar artículos",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.sku.view.global",
+    "service": "product",
+    "section": "sku",
+    "description": "Consultar variantes",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.sku.create.global",
+    "service": "product",
+    "section": "sku",
+    "description": "Crear variantes",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.sku.update.global",
+    "service": "product",
+    "section": "sku",
+    "description": "Actualizar variantes",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.category.view.global",
+    "service": "product",
+    "section": "category",
+    "description": "Consultar categorías",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.category.create.global",
+    "service": "product",
+    "section": "category",
+    "description": "Crear categorías",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.category.update.global",
+    "service": "product",
+    "section": "category",
+    "description": "Actualizar categorías",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.attribute.view.global",
+    "service": "product",
+    "section": "attribute",
+    "description": "Consultar atributos",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.attribute.create.global",
+    "service": "product",
+    "section": "attribute",
+    "description": "Crear atributos",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.attribute.update.global",
+    "service": "product",
+    "section": "attribute",
+    "description": "Actualizar atributos",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.price-list.view.global",
+    "service": "product",
+    "section": "price-list",
+    "description": "Consultar listas de precios",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.price-list.create.global",
+    "service": "product",
+    "section": "price-list",
+    "description": "Crear listas de precios",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.price-list.update.global",
+    "service": "product",
+    "section": "price-list",
+    "description": "Actualizar listas de precios",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.price.view.global",
+    "service": "product",
+    "section": "price",
+    "description": "Consultar precios",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.price.create.global",
+    "service": "product",
+    "section": "price",
+    "description": "Crear precios",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.price.update.global",
+    "service": "product",
+    "section": "price",
+    "description": "Actualizar precios",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.assignment.view.workspace",
+    "service": "product",
+    "section": "assignment",
+    "description": "Consultar listas por cliente",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.assignment.create.workspace",
+    "service": "product",
+    "section": "assignment",
+    "description": "Crear listas por cliente",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.assignment.update.workspace",
+    "service": "product",
+    "section": "assignment",
+    "description": "Actualizar listas por cliente",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.price-list.delete.global",
+    "service": "product",
+    "section": "price-list",
+    "description": "Eliminar listas de precios y sus precios",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.sku.delete.global",
+    "service": "product",
+    "section": "sku",
+    "description": "Eliminar variantes y sus precios",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "product.attribute.delete.global",
+    "service": "product",
+    "section": "attribute",
+    "description": "Eliminar atributos sin uso",
+    "active": true,
+    "workspace": "allWorkspaces"
+  }
+]

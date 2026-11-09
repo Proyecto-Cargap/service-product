@@ -1,0 +1,36 @@
+{
+  "type"                 : "object",
+  "properties"           : {
+    "itemCode"      : {
+      "type"      : "string",
+      "minLength" : 1,
+      "maxLength" : 100
+    },
+    "priceListCode" : {
+      "type"      : "string",
+      "minLength" : 1,
+      "maxLength" : 100
+    },
+    "skuCodes"      : {
+      "type"        : "array",
+      "items"       : {
+        "type"      : "string",
+        "minLength" : 1,
+        "maxLength" : 100
+      },
+      "uniqueItems" : true
+    },
+    "imageIds"      : {
+      "type"        : "array",
+      "items"       : {
+        "type"      : "string",
+        "minLength" : 1,
+        "maxLength" : 100
+      },
+      "maxItems"    : 5,
+      "uniqueItems" : true
+    }
+  },
+  "required"             : ["itemCode", "priceListCode"],
+  "additionalProperties" : false
+}

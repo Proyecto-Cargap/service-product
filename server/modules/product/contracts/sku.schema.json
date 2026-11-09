@@ -1,0 +1,143 @@
+{
+  "type"                 : "object",
+  "properties"           : {
+    "itemCode"     : {
+      "type"      : "string",
+      "minLength" : 1,
+      "maxLength" : 100
+    },
+    "sku"          : {
+      "type"      : "string",
+      "minLength" : 1,
+      "maxLength" : 100
+    },
+    "name"         : {
+      "type"      : "string",
+      "minLength" : 1,
+      "maxLength" : 150
+    },
+    "selections"   : {
+      "type"     : "array",
+      "items"    : {
+        "type"                 : "object",
+        "properties"           : {
+          "attributeCode" : {
+            "type"      : "string",
+            "minLength" : 1,
+            "maxLength" : 100
+          },
+          "value"         : {
+            "type"      : "string",
+            "minLength" : 1,
+            "maxLength" : 100
+          }
+        },
+        "required"             : ["attributeCode", "value"],
+        "additionalProperties" : false
+      },
+      "maxItems" : 8
+    },
+    "active"       : {
+      "type" : "boolean"
+    },
+    "code"         : {
+      "type"    : "string",
+      "pattern" : "^[A-Z]{3}-[a-f0-9-]{36}$"
+    },
+    "workspace"    : {
+      "type"      : "string",
+      "minLength" : 1,
+      "maxLength" : 100
+    },
+    "userCreate"   : {
+      "type"      : "string",
+      "minLength" : 1,
+      "maxLength" : 100
+    },
+    "creationDate" : {
+      "type"    : "integer",
+      "minimum" : 0
+    },
+    "updateDate"   : {
+      "type"    : "integer",
+      "minimum" : 0
+    },
+    "revision"     : {
+      "type"    : "integer",
+      "minimum" : 1
+    },
+    "image"        : {
+      "type"                 : "object",
+      "properties"           : {
+        "fileId"   : {
+          "type"      : "string",
+          "minLength" : 1,
+          "maxLength" : 100
+        },
+        "name"     : {
+          "type"      : "string",
+          "minLength" : 0,
+          "maxLength" : 300
+        },
+        "mimeType" : {
+          "type"      : "string",
+          "minLength" : 0,
+          "maxLength" : 100
+        },
+        "size"     : {
+          "type"    : "integer",
+          "minimum" : 0
+        }
+      },
+      "required"             : ["fileId", "name", "mimeType", "size"],
+      "additionalProperties" : false
+    },
+    "images"       : {
+      "type"     : "array",
+      "items"    : {
+        "type"                 : "object",
+        "properties"           : {
+          "fileId"   : {
+            "type"      : "string",
+            "minLength" : 1,
+            "maxLength" : 100
+          },
+          "name"     : {
+            "type"      : "string",
+            "minLength" : 0,
+            "maxLength" : 300
+          },
+          "mimeType" : {
+            "type"      : "string",
+            "minLength" : 0,
+            "maxLength" : 100
+          },
+          "size"     : {
+            "type"    : "integer",
+            "minimum" : 0
+          }
+        },
+        "required"             : ["fileId", "name", "mimeType", "size"],
+        "additionalProperties" : false
+      },
+      "maxItems" : 10
+    },
+    "erased"       : {
+      "type" : "boolean"
+    }
+  },
+  "required"             : [
+    "itemCode",
+    "sku",
+    "name",
+    "selections",
+    "active",
+    "code",
+    "workspace",
+    "userCreate",
+    "creationDate",
+    "updateDate",
+    "revision"
+  ],
+  "additionalProperties" : false
+}

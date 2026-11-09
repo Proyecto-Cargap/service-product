@@ -1,0 +1,37 @@
+{
+  "main": {
+    "key": "product",
+    "label": "Productos y servicios",
+    "icon": "box",
+    "items": [
+      {
+        "key": "product-item",
+        "label": "Productos y servicios",
+        "icon": "list",
+        "routerLink": "/app/product/item/list",
+        "policyIdentifier": "product.item.view"
+      },
+      {
+        "key": "product-category",
+        "label": "Categorías",
+        "icon": "list",
+        "routerLink": "/app/product/category/list",
+        "policyIdentifier": "product.category.view"
+      },
+      {
+        "key": "product-attribute",
+        "label": "Atributos",
+        "icon": "list",
+        "routerLink": "/app/product/attribute/list",
+        "policyIdentifier": "product.attribute.view"
+      },
+      {
+        "key": "product-price-list",
+        "label": "Listas de precios",
+        "icon": "list",
+        "routerLink": "/app/product/price-list/list",
+        "policyIdentifier": "product.price-list.view"
+      }
+    ]
+  }
+}

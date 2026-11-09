@@ -1,0 +1,56 @@
+{
+  "type"                 : "object",
+  "properties"           : {
+    "name"         : {
+      "type"      : "string",
+      "minLength" : 1,
+      "maxLength" : 150
+    },
+    "description"  : {
+      "type"      : "string",
+      "minLength" : 0,
+      "maxLength" : 1000
+    },
+    "active"       : {
+      "type" : "boolean"
+    },
+    "code"         : {
+      "type"    : "string",
+      "pattern" : "^[A-Z]{3}-[a-f0-9-]{36}$"
+    },
+    "workspace"    : {
+      "type"      : "string",
+      "minLength" : 1,
+      "maxLength" : 100
+    },
+    "userCreate"   : {
+      "type"      : "string",
+      "minLength" : 1,
+      "maxLength" : 100
+    },
+    "creationDate" : {
+      "type"    : "integer",
+      "minimum" : 0
+    },
+    "updateDate"   : {
+      "type"    : "integer",
+      "minimum" : 0
+    },
+    "revision"     : {
+      "type"    : "integer",
+      "minimum" : 1
+    }
+  },
+  "required"             : [
+    "name",
+    "description",
+    "active",
+    "code",
+    "workspace",
+    "userCreate",
+    "creationDate",
+    "updateDate",
+    "revision"
+  ],
+  "additionalProperties" : false
+}

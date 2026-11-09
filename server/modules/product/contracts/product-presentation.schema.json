@@ -1,0 +1,197 @@
+{
+  "type"                 : "object",
+  "properties"           : {
+    "itemCode"        : {
+      "type"      : "string",
+      "minLength" : 1,
+      "maxLength" : 100
+    },
+    "name"            : {
+      "type"      : "string",
+      "minLength" : 0,
+      "maxLength" : 150
+    },
+    "description"     : {
+      "type"      : "string",
+      "minLength" : 0,
+      "maxLength" : 1000
+    },
+    "type"            : {
+      "type" : "string",
+      "enum" : ["product", "service"]
+    },
+    "category"        : {
+      "type"      : "string",
+      "minLength" : 0,
+      "maxLength" : 150
+    },
+    "priceListCode"   : {
+      "type"      : "string",
+      "minLength" : 1,
+      "maxLength" : 100
+    },
+    "priceListName"   : {
+      "type"      : "string",
+      "minLength" : 0,
+      "maxLength" : 150
+    },
+    "currency"        : {
+      "type"      : "string",
+      "minLength" : 0,
+      "maxLength" : 3
+    },
+    "variants"        : {
+      "type"  : "array",
+      "items" : {
+        "type"                 : "object",
+        "properties"           : {
+          "skuCode"    : {
+            "type"      : "string",
+            "minLength" : 1,
+            "maxLength" : 100
+          },
+          "sku"        : {
+            "type"      : "string",
+            "minLength" : 0,
+            "maxLength" : 100
+          },
+          "name"       : {
+            "type"      : "string",
+            "minLength" : 0,
+            "maxLength" : 150
+          },
+          "attributes" : {
+            "type"     : "array",
+            "items"    : {
+              "type"                 : "object",
+              "properties"           : {
+                "name"  : {
+                  "type"      : "string",
+                  "minLength" : 0,
+                  "maxLength" : 150
+                },
+                "value" : {
+                  "type"      : "string",
+                  "minLength" : 0,
+                  "maxLength" : 150
+                }
+              },
+              "required"             : ["name", "value"],
+              "additionalProperties" : false
+            },
+            "maxItems" : 8
+          },
+          "unitPrice"  : {
+            "type"      : ["string", "null"],
+            "maxLength" : 30
+          }
+        },
+        "required"             : ["skuCode", "sku", "name", "attributes", "unitPrice"],
+        "additionalProperties" : false
+      }
+    },
+    "images"          : {
+      "type"     : "array",
+      "items"    : {
+        "type"                 : "object",
+        "properties"           : {
+          "fileId"   : {
+            "type"      : "string",
+            "minLength" : 1,
+            "maxLength" : 100
+          },
+          "name"     : {
+            "type"      : "string",
+            "minLength" : 0,
+            "maxLength" : 300
+          },
+          "mimeType" : {
+            "type"      : "string",
+            "minLength" : 0,
+            "maxLength" : 100
+          },
+          "size"     : {
+            "type"    : "integer",
+            "minimum" : 0
+          },
+          "resource" : {
+            "type" : "string",
+            "enum" : ["item", "sku"]
+          },
+          "code"     : {
+            "type"      : "string",
+            "minLength" : 1,
+            "maxLength" : 100
+          }
+        },
+        "required"             : ["fileId", "name", "mimeType", "size", "resource", "code"],
+        "additionalProperties" : false
+      },
+      "maxItems" : 5
+    },
+    "availableImages" : {
+      "type"  : "array",
+      "items" : {
+        "type"                 : "object",
+        "properties"           : {
+          "fileId"   : {
+            "type"      : "string",
+            "minLength" : 1,
+            "maxLength" : 100
+          },
+          "name"     : {
+            "type"      : "string",
+            "minLength" : 0,
+            "maxLength" : 300
+          },
+          "mimeType" : {
+            "type"      : "string",
+            "minLength" : 0,
+            "maxLength" : 100
+          },
+          "size"     : {
+            "type"    : "integer",
+            "minimum" : 0
+          },
+          "resource" : {
+            "type" : "string",
+            "enum" : ["item", "sku"]
+          },
+          "code"     : {
+            "type"      : "string",
+            "minLength" : 1,
+            "maxLength" : 100
+          }
+        },
+        "required"             : ["fileId", "name", "mimeType", "size", "resource", "code"],
+        "additionalProperties" : false
+      }
+    },
+    "text"            : {
+      "type"      : "string",
+      "minLength" : 0,
+      "maxLength" : 10000
+    },
+    "revisionKey"     : {
+      "type"      : "string",
+      "minLength" : 1,
+      "maxLength" : 128000
+    }
+  },
+  "required"             : [
+    "itemCode",
+    "name",
+    "description",
+    "type",
+    "category",
+    "priceListCode",
+    "priceListName",
+    "currency",
+    "variants",
+    "images",
+    "availableImages",
+    "text",
+    "revisionKey"
+  ],
+  "additionalProperties" : false
+}

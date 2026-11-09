@@ -1,0 +1,49 @@
+{
+  "name"            : "service-product",
+  "description"     : "Catálogo global de productos y servicios, variantes y precios",
+  "author"          : "Xidden Technology",
+  "license"         : "ISC",
+  "version"         : "1.0.0",
+  "build"           : "1",
+  "main"            : "server/server.js",
+  "scripts"         : {
+    "start"              : "node server/server.js",
+    "test"               : "npm run check:code && npm run check:architecture && node --test test/*.test.cjs",
+    "format"             : "node ops/format-code.cjs --write",
+    "format:check"       : "node ops/format-code.cjs --check",
+    "check:code"         : "node ops/check-code.cjs",
+    "check:architecture" : "node ops/check-architecture.cjs"
+  },
+  "dependencies"    : {
+    "@opentelemetry/api"                          : "1.9.1",
+    "@opentelemetry/api-logs"                     : "0.222.0",
+    "@opentelemetry/core"                         : "2.11.0",
+    "@opentelemetry/exporter-logs-otlp-proto"     : "0.222.0",
+    "@opentelemetry/exporter-metrics-otlp-proto"  : "0.222.0",
+    "@opentelemetry/exporter-trace-otlp-proto"    : "0.222.0",
+    "@opentelemetry/instrumentation-amqplib"      : "0.69.0",
+    "@opentelemetry/instrumentation-aws-sdk"      : "0.77.0",
+    "@opentelemetry/instrumentation-express"      : "0.70.0",
+    "@opentelemetry/instrumentation-http"         : "0.222.0",
+    "@opentelemetry/instrumentation-mongodb"      : "0.75.0",
+    "@opentelemetry/instrumentation-runtime-node" : "0.35.0",
+    "@opentelemetry/resources"                    : "2.11.0",
+    "@opentelemetry/sdk-logs"                     : "0.222.0",
+    "@opentelemetry/sdk-metrics"                  : "2.11.0",
+    "@opentelemetry/sdk-node"                     : "0.222.0",
+    "@opentelemetry/sdk-trace"                    : "2.11.0",
+    "amqplib"                                     : "2.0.1",
+    "decimal.js"                                  : "10.6.0",
+    "htmlparser2"                                 : "10.1.0",
+    "mongoose"                                    : "9.10.0",
+    "sanitize-html"                               : "2.18.1"
+  },
+  "type"            : "commonjs",
+  "engines"         : {
+    "node" : ">=24 <25"
+  },
+  "devDependencies" : {
+    "acorn"    : "8.18.0",
+    "prettier" : "3.9.6"
+  }
+}
